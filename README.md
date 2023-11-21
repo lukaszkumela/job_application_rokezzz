@@ -18,12 +18,15 @@ The application has the following endpoints:
 ## Installation
 1. Clone the repository to your local machine.
 2. Install Symfony and MySQL if not already installed.
-3. Configure your MySQL database in the `.env` file.
-4. Run `composer install` to install the necessary dependencies.
-5. Run `php bin/console doctrine:database:create` to create the database.
-6. Run `php bin/console doctrine:migrations:migrate` to create the necessary tables.
-7. Start the Symfony server using `symfony server:start`.
-8. Open your web browser and navigate to http://127.0.0.1:8000 to access the application.
+3. Run `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` and then `irm get.scoop.sh | iex` to install Scoop
+4. Run `scoop install symfony-cli` to install Symfony CLI
+5. Run `composer install` to install the necessary dependencies.
+6. Run `composer require symfony/runtime` to install symfony/runtime
+7. Configure your MySQL database in the `.env` file.
+8. Run `php bin/console doctrine:database:create` to create the database.
+9. Run `php bin/console doctrine:migrations:migrate` to create the necessary tables.
+10. Start the Symfony server using `symfony server:start`.
+11. Open your web browser and navigate to http://127.0.0.1:8000 to access the application.
 
 ## Database Configuration
 The project uses a MySQL database. The database configuration is located in the `.env` file. You will need to provide the database host, port, user, password, and database name.
