@@ -1,4 +1,5 @@
 # Job Application Project
+The application created for the purposes of the Rokezzz recruitment.
 
 ## Description
 This project is a job application management system built with Symfony and MySQL. It allows users to submit job applications and search for existing applications. The application form includes fields such as name, surname, email, telephone number, expected salary, position, and level. 
